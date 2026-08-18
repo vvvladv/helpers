@@ -1,8 +1,8 @@
-# qmedia-by/helpers
+# vvvladv/helpers
 
 Хелперы для проектов на Evolution CMS 3.
 
-Пакет рассчитан на установку через Composer в `core/` проекта, по той же схеме, что `qmedia-by/soft-core`.
+Пакет рассчитан на установку через Composer в `core/` проекта.
 
 ## Требования
 
@@ -15,31 +15,11 @@
 
 ## Установка
 
-Репозиторий приватный. В `public/core/composer.json` проекта:
-
-```json
-{
-  "require": {
-    "qmedia-by/helpers": "^1.0"
-  },
-  "repositories": [
-    {
-      "name": "helpers",
-      "type": "vcs",
-      "url": "git@github.com:qmedia-by/helpers.git"
-    }
-  ]
-}
-```
-
-Затем:
-
 ```bash
-cd public/core
-composer update qmedia-by/helpers
+composer require vvvladv/helpers
 ```
 
-Composer сам поставит зависимости пакета (`league/glide` и связанные библиотеки). Service provider подхватится через `package:discover` в `post-autoload-dump` Evolution CMS. Дефолтный конфиг из пакета мержится автоматически.
+Composer сам поставит зависимости пакета (`league/glide` и связанные библиотеки). Дефолтный конфиг из пакета мержится автоматически.
 
 Публиковать конфиг нужно только если хотите переопределить значения в проекте:
 
