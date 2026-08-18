@@ -1,4 +1,4 @@
-# vvvladv/helpers
+# qmedia-by/helpers
 
 Хелперы для проектов на Evolution CMS 3.
 
@@ -16,7 +16,7 @@
 ## Установка
 
 ```bash
-composer require vvvladv/helpers
+composer require qmedia-by/helpers
 ```
 
 Composer сам поставит зависимости пакета (`league/glide` и связанные библиотеки). Дефолтный конфиг из пакета мержится автоматически.
