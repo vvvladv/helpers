@@ -75,7 +75,7 @@ class ListerHelper
      */
     public function toArray(): array
     {
-        return $this->data;
+        return array_values($this->data);
     }
 
     /**
