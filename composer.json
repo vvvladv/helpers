@@ -1,0 +1,46 @@
+{
+    "name": "qmedia-by/helpers",
+    "description": "Shared helpers for Evolution CMS 3 projects",
+    "type": "library",
+    "license": "proprietary",
+    "keywords": [
+        "evolution-cms",
+        "evocms",
+        "laravel",
+        "helpers"
+    ],
+    "authors": [
+        {
+            "name": "Qmedia"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/cache": "^8.0",
+        "illuminate/pagination": "^8.0",
+        "illuminate/support": "^8.0",
+        "league/glide": "^1.7 || 1.x-dev",
+        "nesbot/carbon": "^2.0"
+    },
+    "suggest": {
+        "ext-gd": "Required for Glide when Imagick is not available",
+        "ext-imagick": "Preferred image driver for Glide"
+    },
+    "autoload": {
+        "psr-4": {
+            "QmediaBy\\Helpers\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "QmediaBy\\Helpers\\HelpersServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
